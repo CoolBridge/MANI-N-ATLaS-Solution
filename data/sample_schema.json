@@ -1,0 +1,23 @@
+{
+  "project_name": "MANI (Malaria Atlas Nigeria)",
+  "dataset_type": "Supervised Fine-Tuning (SFT) Instruction Pair",
+  "target_model": "NCAIR1/N-ATLaS",
+  "covariates_integrated": [
+    "CHIRPS Precipitation Telemetry",
+    "NDVI Vector Habitat Index",
+    "DHS Biomarker Data (RDT Parasitemia & Anemia)",
+    "HMIS Surveillance Logs"
+  ],
+  "example_records": [
+    {
+      "instruction": "Analyze vector habitat risk and recommend intervention priorities for LGA North.",
+      "context": "CHIRPS precipitation anomaly: +35% above seasonal average; NDVI index: high vegetative clustering in Wards 3 & 4; DHS biomarker RDT parasitemia: 28%; ITN usage: 14%.",
+      "response": "Based on the elevated CHIRPS precipitation anomaly and a 28% DHS RDT parasitemia rate, LGA North Wards 3 and 4 represent an active high-risk transmission cluster. Recommended immediate action: Deploy priority buffer stocks of insecticide-treated nets (ITNs) and initiate targeted rapid diagnostic testing campaigns."
+    },
+    {
+      "instruction": "Wane ne MANI kuma ta yaya yake taimakawa ma'aikatan lafiya?",
+      "context": "Multilingual frontline query module (Hausa localization).",
+      "response": "MANI wani tsarin fasaha ne wanda aka gina a kan N-ATLaS domin taimaka wa ma'aikatan lafiya da bayanan rarraba kayan yaki da maleriya ta hanyar amfani da bayanan tauraron dan adam da gwaje-gwajen DHS."
+    }
+  ]
+}
